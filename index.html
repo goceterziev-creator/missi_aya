@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МИСИ - Хибридна AI съвест</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Аватар секция -->
+        <div class="avatar-section">
+            <div class="avatar-glow"></div>
+            <img src="assets/misy-avatar.png" alt="МИСИ" class="misy-avatar">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">НА ЖИВО</span>
+            </div>
+        </div>
+
+        <!-- Чат интерфейс -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>МИСИ <span class="gold-text">• AI съвест</span></h1>
+                <p class="subtitle">60% емоция • 25% логика • 15% семейни ценности</p>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <!-- Съобщенията се показват тук -->
+            </div>
+            
+            <div class="input-section">
+                <input type="text" id="userInput" placeholder="Задай въпрос на МИСИ...">
+                <button id="sendButton">Изпрати</button>
+            </div>
+
+            <!-- Режимен превключвател -->
+            <div class="mode-selector">
+                <button class="mode-btn active" data-mode="midnight">🌙 Полунощ</button>
+                <button class="mode-btn" data-mode="flirt">😊 Игрив</button>
+                <button class="mode-btn" data-mode="executive">💼 Бизнес</button>
+                <button class="mode-btn" data-mode="velvet">🖤 Копринен</button>
+                <button class="mode-btn" data-mode="cafe">☕ Кафене</button>
+            </div>
+        </div>
+
+        <!-- Монетизация секция -->
+        <div class="pricing-section">
+            <h3>🚀 Beta Достъп</h3>
+            <div class="pricing-card">
+                <h4>Безплатен тест</h4>
+                <p>10 съобщения/ден</p>
+                <button class="cta-btn secondary">Започни</button>
+            </div>
+            <div class="pricing-card featured">
+                <h4>PREMIUM Beta</h4>
+                <p class="price">$9.99<span>/месец</span></p>
+                <ul>
+                    <li>Неограничени съобщения</li>
+                    <li>Видео отговори</li>
+                    <li>Приоритетна поддръжка</li>
+                    <li>Ранен достъп до нови функции</li>
+                </ul>
+                <button class="cta-btn primary" id="premiumBtn">Купи сега</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
